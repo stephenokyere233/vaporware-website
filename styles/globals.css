@@ -101,3 +101,7 @@ img.next-image {
     opacity: 0.3;
   }
 }
+
+.button:hover .buttonArrowIcon {
+  fill: #fff;
+}

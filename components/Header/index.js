@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import menu from "../../assets/svg/menu.svg";
+import Button from "../Button";
 import styles from "./styles";
 
 const Header = () => {
@@ -24,9 +25,8 @@ const Header = () => {
           <p className={styles.navLink}>
             <Link href="#">Contact</Link>
           </p>
-          <p className={styles.navLink}>
-            <Link href="#">Get started</Link>
-          </p>
+          <div className="m-3" />
+          <Button label="Get started" link="/" />
         </nav>
         <div className={styles.menuIcon}>
           <Image src={menu} alt="menu" width={50} height={50} />
