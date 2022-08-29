@@ -34,19 +34,26 @@ const Header = () => {
         </nav>
         <div className="lg:flex items-center justify-center hidden">
           <Link href={socialLinks.twitter} passHref>
-            <div className={styles.socialIconLink}>
-              <Image src={twitter} alt="twitter icon" />
-            </div>
+            <a target="_blank" rel="noopener noreferrer">
+              <div className={styles.socialIconLink}>
+                <Image src={twitter} alt="twitter icon" />
+              </div>
+            </a>
           </Link>
           <div className="m-3" />
           <Link href={socialLinks.instagram} passHref>
-            <div className={styles.socialIconLink}>
-              <Image src={instagram} alt="twitter icon" />
-            </div>
+            <a target="_blank" rel="noopener noreferrer">
+              <div className={styles.socialIconLink}>
+                <Image src={instagram} alt="twitter icon" />
+              </div>
+            </a>
           </Link>
           <div className="m-3" />
           <div className="-mt-2">
-            <Button label="Get started" link="/" />
+            <Button
+              label="Get started"
+              link="https://forms.gle/heFhEnhmQkuULVXr8"
+            />
           </div>
         </div>
         <div className={styles.menuIcon} onClick={() => setShowDrawer(true)}>
