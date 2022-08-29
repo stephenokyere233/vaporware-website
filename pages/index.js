@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Flex from "../components/Flex";
 import Footer from "../components/Footer";
 import GetStarted from "../components/GetStarted";
@@ -38,6 +39,7 @@ export default function Home() {
       />
       <GetStarted />
       <Footer />
+      <div className="pointer" />
     </>
   );
 }
