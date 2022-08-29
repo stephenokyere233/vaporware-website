@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <>
       <section className={styles.container}>
-        <h1 className="text-9xl max-w-5xl font-bold mb-8">
+        <h1 className="lg:text-9xl text-7xl max-w-5xl font-bold mb-8">
           We bring your ideas to
           <Typewriter
             options={{

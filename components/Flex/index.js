@@ -2,21 +2,47 @@ import Image from "next/image";
 import Link from "next/link";
 import img1 from "../../assets/1.png";
 
-const Flex = () => {
+const Flex = (props) => {
+  const { reverse } = props;
+  if (!reverse)
+    return (
+      <>
+        <section>
+          <div className="lg:flex items-center justify-between">
+            <div className="flex-1">
+              <div className="lg:p-20 p-10">
+                <p className="lg:text-7xl text-5xl font-bold">
+                  Vapourware menu We bring your ideas to Life
+                </p>
+                <p className="border-b lg:text-2xl my-10 mb-0 w-max">
+                  <Link href="/">Let&apos;s talk</Link>
+                </p>
+              </div>
+            </div>
+            <div className="flex-1">
+              <Image src={img1} alt="..." />
+            </div>
+          </div>
+        </section>
+      </>
+    );
+
   return (
     <>
-      <section className="bg-[#f1f1f111]">
-        <div className="flex items-center justify-between">
-          <div className="flex-1 p-10">
-            <p className="text-7xl font-bold">
-              Vapourware menu We bring your ideas to Life
-            </p>
-            <p className="border-b text-2xl my-10 mb-0 w-max">
-              <Link href="/">Let&apos;s talk</Link>
-            </p>
-          </div>
+      <section>
+        <div className="flex lg:flex-row flex-col-reverse items-center justify-between">
           <div className="flex-1">
             <Image src={img1} alt="..." />
+          </div>
+          <div className="flex-1">
+            <div className="lg:p-20 p-10">
+              <p className="lg:text-7xl text-5xl font-bold">
+                Vapourware menu We bring your ideas to Life
+              </p>
+              <p className="border-b lg:text-2xl my-10 mb-0 w-max">
+                <Link href="/">Let&apos;s talk</Link>
+              </p>
+            </div>
           </div>
         </div>
       </section>
