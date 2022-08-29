@@ -1,5 +1,4 @@
-import Link from "next/link";
-import styles from "./styles";
+import StartLink from "../StartLink";
 
 const GetStarted = () => {
   return (
@@ -9,11 +8,7 @@ const GetStarted = () => {
           <h2 className="text-5xl font-bold">
             We bring your ideas to life. Let’s make it happen.
           </h2>
-          <div className="border-b lg:text-2xl my-10 mb-0 w-max">
-            <p className={styles.link}>
-              <Link href="/">Let&apos;s talk</Link>
-            </p>
-          </div>
+          <StartLink />
         </div>
       </section>
     </>

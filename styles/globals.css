@@ -27,17 +27,8 @@ a {
   box-sizing: border-box;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  scroll-behavior: smooth;
 }
-
-/* @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-} */
 
 .Typewriter__wrapper {
   color: var(--primary);
@@ -86,5 +77,27 @@ img.next-image {
 
   100% {
     transform: scale(0.8);
+  }
+}
+
+.scroll-icon {
+  animation: scrollIcon 1s infinite;
+  cursor: pointer;
+}
+
+@keyframes scrollIcon {
+  0% {
+    transform: rotate(180deg) scale(2) translateY(-10px);
+    opacity: 0.3;
+  }
+
+  50% {
+    transform: rotate(180deg) scale(2) translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(180deg) scale(2) translateY(-10px);
+    opacity: 0.3;
   }
 }
