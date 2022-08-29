@@ -107,3 +107,9 @@ img.next-image {
 .button:hover .buttonArrowIcon {
   fill: #fff;
 }
+
+@media screen and (max-width: 480px) {
+  .cursor {
+    display: none;
+  }
+}
