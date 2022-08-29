@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary: #1d95ff;
+}
+
 html,
 body {
   background: #000;
@@ -35,7 +39,7 @@ a {
 } */
 
 .Typewriter__wrapper {
-  color: #1d95ff;
+  color: var(--primary);
 }
 
 .Typewriter__cursor {
@@ -45,4 +49,12 @@ a {
 img.next-image {
   margin: 0;
   width: 100%;
+}
+
+::selection {
+  background: var(--primary);
+}
+
+.afterline::after {
+  content: " —";
 }

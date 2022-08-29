@@ -10,7 +10,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Flex
-        title="Website and Web App Development"
+        title="Website &amp; Web App Development"
         content="An interactive website is not only cool. It's SEO friendly and boosts your search engine rankings. Our team of developers with global experience bring diversity to every project and reimagine your ideas to be the best it can be. We cover all the basics as we transform thoughts on paper to an expert outcome; stunning with the extra advantage of competitiveness and user-friendliness."
         subtitle="WEB TOOLS"
       />

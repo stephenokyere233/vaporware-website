@@ -13,7 +13,7 @@ const Flex = (props) => {
             <div className="flex-1">
               <div className="lg:p-20 p-10 py-20">
                 <small className={styles.subtitle}>{subtitle}</small>
-                <p className="lg:text-7xl text-5xl font-bold">{title}</p>
+                <p className="lg:text-7xl text-5xl font-bold afterline">{title}</p>
                 <p className="mt-5 text-xl font-medium leading-8">{content}</p>
                 <div className="border-b lg:text-2xl my-10 mb-0 w-max">
                   <p className={styles.link}>
@@ -40,7 +40,7 @@ const Flex = (props) => {
           <div className="flex-1">
             <div className="lg:p-20 p-10 py-20">
               <small className={styles.subtitle}>{subtitle}</small>
-              <p className="lg:text-7xl text-5xl font-bold">{title}</p>
+              <p className="lg:text-7xl text-5xl font-bold afterline">{title}</p>
               <p className="mt-5 text-xl font-medium leading-8">{content}</p>
               <div className="border-b lg:text-2xl my-10 mb-0 w-max">
                 <p className={styles.link}>
