@@ -31,6 +31,11 @@ export default function Home() {
         subtitle="WRITING"
         reverse
       />
+      <Flex
+        title="Social Media Management"
+        content="Our interdisciplinary team consists of visual artists, writers, content curators and bloggers who offer their unique perspectives in technical and creative content documentation and production. Our approach is to tell a captivating story through photography, videography, 2D & 3D design and animation to bring the idea to life. We also offer content strategy and editorial services deployed across digital media, print media, VR and below the line marketing outlets.      "
+        subtitle="SOCIALS &amp; BRANDING"
+      />
       <GetStarted />
       <Footer />
     </>
