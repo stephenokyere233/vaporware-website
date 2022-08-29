@@ -4,6 +4,7 @@ const styles = {
   navLink: `p-3 font-bold hover:text-brand transition`,
   nav: `hidden lg:flex items-center justify-between`,
   menuIcon: `lg:hidden`,
+  socialIconLink: `cursor-pointer transition hover:opacity-80`,
 };
 
 export default styles;

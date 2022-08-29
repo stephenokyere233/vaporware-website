@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import menu from "../../assets/svg/menu.svg";
+import twitter from "../../assets/svg/twitter.svg";
+import instagram from "../../assets/svg/instagram.svg";
+import { socialLinks } from "../../content";
 import Button from "../Button";
 import styles from "./styles";
 
@@ -25,9 +28,24 @@ const Header = () => {
           <p className={styles.navLink}>
             <Link href="#">Contact</Link>
           </p>
-          <div className="m-3" />
-          <Button label="Get started" link="/" />
         </nav>
+        <div className="lg:flex items-center justify-center hidden">
+          <Link href={socialLinks.twitter} passHref>
+            <div className={styles.socialIconLink}>
+              <Image src={twitter} alt="twitter icon" />
+            </div>
+          </Link>
+          <div className="m-3" />
+          <Link href={socialLinks.instagram} passHref>
+            <div className={styles.socialIconLink}>
+              <Image src={instagram} alt="twitter icon" />
+            </div>
+          </Link>
+          <div className="m-3" />
+          <div className="-mt-2">
+            <Button label="Get started" link="/" />
+          </div>
+        </div>
         <div className={styles.menuIcon}>
           <Image src={menu} alt="menu" width={50} height={50} />
         </div>

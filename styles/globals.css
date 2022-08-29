@@ -18,8 +18,10 @@ body {
   cursor: none;
 }
 
-a {
+a,
+button {
   color: inherit;
+  user-select: none;
   text-decoration: none;
 }
 
