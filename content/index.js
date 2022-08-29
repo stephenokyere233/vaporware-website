@@ -1,4 +1,4 @@
 export const socialLinks = {
-  twitter: "",
-  instagram: "",
+  twitter: "https://twitter.com/VapourwareHQ",
+  instagram: "https://www.instagram.com/VapourwareHQ/",
 };
