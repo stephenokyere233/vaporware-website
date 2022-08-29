@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import Drawer from "../components/Drawer";
 import Flex from "../components/Flex";
 import Footer from "../components/Footer";
 import GetStarted from "../components/GetStarted";
@@ -25,15 +25,15 @@ export default function Home() {
         reverse
       />
       <Flex
+        title="UI &amp; UX Design"
+        content="Our interdisciplinary team consists of visual artists, writers, content curators and bloggers who offer their unique perspectives in technical and creative content documentation and production. Our approach is to tell a captivating story through photography, videography, 2D & 3D design and animation to bring the idea to life. We also offer content strategy and editorial services deployed across digital media, print media, VR and below the line marketing outlets.      "
+        subtitle="DESIGN"
+        imgAlt="image of UI and UX deesign"
+      />
+      <Flex
         title="Graphic Design"
         content="Our interdisciplinary team consists of visual artists, writers, content curators and bloggers who offer their unique perspectives in technical and creative content documentation and production. Our approach is to tell a captivating story through photography, videography, 2D & 3D design and animation to bring the idea to life. We also offer content strategy and editorial services deployed across digital media, print media, VR and below the line marketing outlets.      "
         subtitle="DESIGN &amp; CONTENT"
-        imgAlt="image of graphic design"
-      />
-      <Flex
-        title="Technical Writing"
-        content="Our interdisciplinary team consists of visual artists, writers, content curators and bloggers who offer their unique perspectives in technical and creative content documentation and production. Our approach is to tell a captivating story through photography, videography, 2D & 3D design and animation to bring the idea to life. We also offer content strategy and editorial services deployed across digital media, print media, VR and below the line marketing outlets.      "
-        subtitle="WRITING"
         imgAlt="image of graphic design"
         reverse
       />
@@ -43,8 +43,16 @@ export default function Home() {
         subtitle="SOCIALS &amp; BRANDING"
         imgAlt="image of graphic design"
       />
+      <Flex
+        title="Technical Writing"
+        content="Our interdisciplinary team consists of visual artists, writers, content curators and bloggers who offer their unique perspectives in technical and creative content documentation and production. Our approach is to tell a captivating story through photography, videography, 2D & 3D design and animation to bring the idea to life. We also offer content strategy and editorial services deployed across digital media, print media, VR and below the line marketing outlets.      "
+        subtitle="WRITING"
+        imgAlt="image of graphic design"
+        reverse
+      />
       <GetStarted />
       <Footer />
+      <Drawer />
       <div className="pointer" />
     </>
   );

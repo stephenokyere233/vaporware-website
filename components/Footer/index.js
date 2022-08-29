@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
     <>
-      <footer className="p-10 text-center font-medium">
-        &copy;{Date().substr(11, 4)} All Rights Reserved Vapourware Studios
+      <footer className="p-10 lg:p-20 text-center font-medium small">
+        <p className="opacity-40">&copy;{Date().substr(11, 4)} Vapourware Studios</p>
       </footer>
     </>
   );

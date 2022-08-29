@@ -6,8 +6,11 @@ import instagram from "../../assets/svg/instagram.svg";
 import { socialLinks } from "../../content";
 import Button from "../Button";
 import styles from "./styles";
+import { useContext } from "react";
+import { AppContext } from "../../context";
 
 const Header = () => {
+  const { showDrawer, setShowDrawer } = useContext(AppContext);
   return (
     <header className={styles.header}>
       <div className={styles.headerWrapper}>
@@ -46,7 +49,7 @@ const Header = () => {
             <Button label="Get started" link="/" />
           </div>
         </div>
-        <div className={styles.menuIcon}>
+        <div className={styles.menuIcon} onClick={() => setShowDrawer(true)}>
           <Image src={menu} alt="menu" width={50} height={50} />
         </div>
       </div>

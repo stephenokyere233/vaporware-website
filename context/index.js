@@ -4,6 +4,7 @@ export const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
   const [_document, set_document] = useState(null);
+  const [showDrawer, setShowDrawer] = useState(false);
 
   useEffect(() => {
     if (typeof window === "object") {
@@ -29,5 +30,9 @@ export const AppProvider = ({ children }) => {
     }
   }, [_document]);
 
-  return <AppContext.Provider>{children}</AppContext.Provider>;
+  return (
+    <AppContext.Provider value={{ showDrawer, setShowDrawer }}>
+      {children}
+    </AppContext.Provider>
+  );
 };
