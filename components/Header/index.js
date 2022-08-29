@@ -8,13 +8,14 @@ import Button from "../Button";
 import styles from "./styles";
 import { useContext } from "react";
 import { AppContext } from "../../context";
+import Logo from "../Logo";
 
 const Header = () => {
-  const { showDrawer, setShowDrawer } = useContext(AppContext);
+  const { setShowDrawer } = useContext(AppContext);
   return (
     <header className={styles.header}>
       <div className={styles.headerWrapper}>
-        <h2 className="text-2xl">Vapourware</h2>
+        <Logo />
         <nav className={styles.nav}>
           <p className={styles.navLink}>
             <Link href="#">Home</Link>
