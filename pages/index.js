@@ -1,21 +1,30 @@
+import { Meta } from "milky-ui";
 import Drawer from "../components/Drawer";
 import Flex from "../components/Flex";
 import Footer from "../components/Footer";
 import GetStarted from "../components/GetStarted";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
-import img1 from "../assets/1.jpg";
-import img2 from "../assets/2.png";
 import img3 from "../assets/3.webp";
+import img1 from "../assets/1.jpg";
 import uiDesign from "../assets/uiDesign.jpg";
 import graphicDesign from "../assets/graphicDesign.webp";
-import Projects from "../components/Projects";
+import metaContent from "../content/metaContent";
 
 export default function Home() {
   return (
     <>
       <Header />
       <Hero />
+      <Meta
+        title={metaContent.title}
+        description={metaContent.description}
+        image={metaContent.image}
+        imageAlt={metaContent.imageAlt}
+        siteName={metaContent.siteName}
+        url={metaContent.url}
+        twitterCreator={metaContent.twitterCreator}
+      />
       <div id="what-we-do" />
       <Flex
         title="Website &amp; Web App Development"

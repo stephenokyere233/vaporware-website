@@ -1,7 +1,11 @@
+import Link from "next/link";
+
 const Logo = () => {
   return (
     <>
-      <h2 className="text-2xl">Vapourware</h2>
+      <Link href="/" passHref>
+        <h2 className="text-xl font-bold cursor-pointer select-none hover:opacity-80">vapourware</h2>
+      </Link>
     </>
   );
 };
