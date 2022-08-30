@@ -15,19 +15,21 @@ const Projects = () => {
           </div>
           {projects.map((project, i) => {
             return (
-              <li
-                key={i}
-                className="project-grid-item -mb-2 relative overflow-hidden lg:border-r-[12px] lg:border-r-black"
-              >
-                <Link passHref href={project.link}>
-                  <a target="_blank" rel="noopener noreferrer">
-                    <Image src={project.img} alt="..." />
+              <Link key={i} passHref href={project.link}>
+                <a target="_blank" rel="noopener noreferrer">
+                  <li
+                    className="project-grid-item -mb-2 relative overflow-hidden "
+                    // className="project-grid-item -mb-2 relative overflow-hidden lg:border-r-[12px] lg:border-r-black"
+                  >
+                    <div className="-mb-2">
+                      <Image src={project.img} alt="..." />
+                    </div>
                     <div className="project-grid-title w-full h-full absolute bottom-0 left-0 flex items-center justify-center">
                       <h2 className="font-bold text-2xl">{project.title}</h2>
                     </div>
-                  </a>
-                </Link>
-              </li>
+                  </li>
+                </a>
+              </Link>
             );
           })}
         </ul>

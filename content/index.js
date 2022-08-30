@@ -9,27 +9,27 @@ export const socialLinks = {
 
 export const projects = [
   {
-    img: img2,
+    img: img1,
     title: "Sample website #1",
     link: "",
   },
   {
-    img: img2,
+    img: img1,
     title: "Sample website #2",
     link: "",
   },
   {
-    img: img2,
+    img: img1,
     title: "Sample website #3",
     link: "",
   },
   {
-    img: img2,
+    img: img1,
     title: "Sample website #4",
     link: "",
   },
   {
-    img: img2,
+    img: img1,
     title: "Sample website #5",
     link: "",
   },
