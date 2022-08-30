@@ -1,4 +1,4 @@
-import { isMobile } from "react-device-detect";
+// import { isMobile } from "react-device-detect";
 import { useParallax } from "react-scroll-parallax";
 import Image from "next/image";
 import img1 from "../../assets/1.png";
