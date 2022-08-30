@@ -1,13 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import img1 from "../../assets/1.png";
 import { projects } from "../../content";
 
 const Projects = () => {
   return (
     <>
       <section>
-        <ul className="grid grid-cols-1 lg:grid-cols-3 -mt-[7px]">
+        <ul className="grid grid-cols-1 lg:grid-cols-3">
           <div className="flex justify-center flex-col lg:p-20 p-10 py-20-">
             <h2 className="lg:text-8xl text-4xl font-bold afterline">
               Our Works
@@ -17,10 +16,7 @@ const Projects = () => {
             return (
               <Link key={i} passHref href={project.link}>
                 <a target="_blank" rel="noopener noreferrer">
-                  <li
-                    className="project-grid-item -mb-2 relative overflow-hidden "
-                    // className="project-grid-item -mb-2 relative overflow-hidden lg:border-r-[12px] lg:border-r-black"
-                  >
+                  <li className="project-grid-item -mb-2 relative overflow-hidden ">
                     <div className="-mb-2">
                       <Image src={project.img} alt="..." />
                     </div>

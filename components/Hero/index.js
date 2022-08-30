@@ -10,15 +10,21 @@ const Hero = () => {
   return (
     <>
       <section className={styles.container}>
-        <h1 ref={ref} className="lg:text-9xl text-7xl max-w-5xl font-bold mb-8 text-center h-3/6">
-          We bring your ideas to
-          <Typewriter
-            options={{
-              strings: ["Life.", "World."],
-              autoStart: true,
-              loop: true,
-            }}
-          />
+        <h1
+          ref={ref}
+          className="lg:text-9xl text-7xl max-w-5xl font-bold mb-8 text-center h-3/6"
+        >
+          Bring Your
+          <div className="h-[140px] mt-3">
+            <Typewriter
+              options={{
+                strings: ["Ideas", "Dreams", "Vision"],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </div>
+          To Life
         </h1>
         <Link href="#what-we-do">
           <div className="scroll-icon">

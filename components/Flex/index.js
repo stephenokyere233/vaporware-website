@@ -22,8 +22,8 @@ const Flex = (props) => {
                 <StartLink />
               </div>
             </div>
-            <div className="flex-1">
-              <Image src={img} alt={imgAlt} />
+            <div className="flex-1 bg-[red]">
+              <Image src={img} alt={imgAlt} objectFit="cover" layout="responsive" />
             </div>
           </div>
         </section>
@@ -35,7 +35,7 @@ const Flex = (props) => {
       <section>
         <div className="flex lg:flex-row flex-col-reverse items-center justify-between">
           <div className="flex-1">
-            <Image src={img} alt={imgAlt} />
+            <Image src={img} alt={imgAlt} objectFit="cover" layout="responsive" />
           </div>
           <div className="flex-1">
             <div className="lg:p-20 p-6 py-20" ref={ref}>

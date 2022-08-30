@@ -1,6 +1,6 @@
 import img1 from "../assets/1.png"
 import img2 from "../assets/2.png"
-import img3 from "../assets/3.jpg"
+import img3 from "../assets/3.webp"
 
 export const socialLinks = {
   twitter: "https://twitter.com/VapourwareHQ",
