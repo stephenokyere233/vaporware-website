@@ -5,7 +5,7 @@ const metaContent = {
   image: "/assets/banner.png",
   imageAlt: "Vapourware studios banner image",
   siteName: "vapourwarestudios.co",
-  url: "htpps://www.vapourwarestudios.co",
+  url: "https://www.vapourwarestudios.co",
   twitterCreator: "@VapourwareHQ",
 };
 
