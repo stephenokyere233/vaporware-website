@@ -17,21 +17,21 @@ const Header = () => {
       <div className={styles.headerWrapper}>
         <Logo />
         <nav className={styles.nav}>
-          <p className={styles.navLink}>
+          <div className={styles.navLink}>
             <Link href="#">Home</Link>
-          </p>
-          <p className={styles.navLink}>
+          </div>
+          <div className={styles.navLink}>
             <Link href="#">About</Link>
-          </p>
-          <p className={styles.navLink}>
+          </div>
+          <div className={styles.navLink}>
             <Link href="#">Projects</Link>
-          </p>
-          <p className={styles.navLink}>
+          </div>
+          <div className={styles.navLink}>
             <Link href="#">Careers</Link>
-          </p>
-          <p className={styles.navLink}>
+          </div>
+          <div className={styles.navLink}>
             <Link href="#">Contact</Link>
-          </p>
+          </div>
         </nav>
         <div className="lg:flex items-center justify-center hidden">
           <Link href={socialLinks.twitter} passHref>

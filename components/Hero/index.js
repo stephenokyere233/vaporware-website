@@ -6,7 +6,7 @@ import scroll from "../../assets/svg/scroll.svg";
 import Link from "next/link";
 
 const Hero = () => {
-  const { ref } = useParallax({ speed: 30 });
+  const { ref } = useParallax({ speed: 20 });
   return (
     <>
       <section className={styles.container}>
