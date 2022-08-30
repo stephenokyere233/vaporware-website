@@ -7,21 +7,12 @@ import email from "../assets/svg/email.svg";
 import { socialLinks } from "../content";
 import Drawer from "../components/Drawer";
 import Button from "../components/Button";
-import { Meta } from "milky-ui";
-import metaContent from "../content/metaContent";
+import MetaHead from "../components/Meta";
 
 const Contact = () => {
   return (
     <>
-      <Meta
-        title="Vapourware Studios —— Contact"
-        description={metaContent.description}
-        image={metaContent.image}
-        imageAlt={metaContent.imageAlt}
-        siteName={metaContent.siteName}
-        url={metaContent.url}
-        twitterCreator={metaContent.twitterCreator}
-      />
+      <MetaHead title="Vapourware Studios —— Contact" />
       <Header />
       <Drawer />
       <main className="flex items-center justify-center flex-col h-[70vh]">
