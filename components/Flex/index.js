@@ -1,6 +1,5 @@
 import { useParallax } from "react-scroll-parallax";
 import Image from "next/image";
-import img1 from "../../assets/1.png";
 import StartLink from "../StartLink";
 import styles from "./styles";
 
@@ -24,7 +23,7 @@ const Flex = (props) => {
               </div>
             </div>
             <div className="flex-1">
-              <Image src={img1} alt={imgAlt} />
+              <Image src={img} alt={imgAlt} />
             </div>
           </div>
         </section>
@@ -36,7 +35,7 @@ const Flex = (props) => {
       <section>
         <div className="flex lg:flex-row flex-col-reverse items-center justify-between">
           <div className="flex-1">
-            <Image src={img1} alt={imgAlt} />
+            <Image src={img} alt={imgAlt} />
           </div>
           <div className="flex-1">
             <div className="lg:p-20 p-6 py-20" ref={ref}>
