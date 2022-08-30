@@ -14,7 +14,7 @@ const Hero = () => {
           ref={ref}
           className="lg:text-9xl text-7xl max-w-5xl font-bold mb-8 text-center h-3/6"
         >
-          Bring Your
+          We Bring Your
           <div className="lg:h-[140px] h-[100px] -mb-5 lg:mb-0 lg:mt-3">
             <Typewriter
               options={{
