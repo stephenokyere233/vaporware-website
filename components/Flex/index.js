@@ -1,3 +1,4 @@
+import { Parallax, useParallax } from "react-scroll-parallax";
 import Image from "next/image";
 import Link from "next/link";
 import img1 from "../../assets/1.png";
@@ -7,13 +8,16 @@ import styles from "./styles";
 
 const Flex = (props) => {
   const { reverse, img, title, content, subtitle, imgAlt } = props;
+  const { ref } = useParallax({ speed: 40 });
+
   if (!reverse)
     return (
       <>
         <section>
           <div className="lg:flex items-center justify-between">
             <div className="flex-1">
-              <div className="lg:p-20 p-6 py-20">
+              {/* <Parallax translateX={["-100px", "30px"]}> */}
+              <div className="lg:p-20 p-6 py-20" ref={ref}>
                 <small className={styles.subtitle}>{subtitle}</small>
                 <p className="lg:text-7xl text-4xl font-bold afterline">
                   {title}
@@ -21,6 +25,7 @@ const Flex = (props) => {
                 <p className="mt-5 text-xl font-medium leading-8">{content}</p>
                 <StartLink />
               </div>
+              {/* </Parallax> */}
             </div>
             <div className="flex-1">
               <Image src={img1} alt={imgAlt} />
@@ -38,7 +43,7 @@ const Flex = (props) => {
             <Image src={img1} alt={imgAlt} />
           </div>
           <div className="flex-1">
-            <div className="lg:p-20 p-6 py-20">
+            <div className="lg:p-20 p-6 py-20" ref={ref}>
               <small className={styles.subtitle}>{subtitle}</small>
               <p className="lg:text-7xl text-4xl font-bold afterline">
                 {title}
