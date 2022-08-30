@@ -22,7 +22,7 @@ const Flex = (props) => {
                 <StartLink />
               </div>
             </div>
-            <div className="flex-1 bg-[red]">
+            <div className="flex-1 bg-[#f1f1f111]">
               <Image src={img} alt={imgAlt} objectFit="cover" layout="responsive" />
             </div>
           </div>
