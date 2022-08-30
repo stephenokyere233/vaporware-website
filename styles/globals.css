@@ -6,6 +6,7 @@
 
 :root {
   --primary: #1d95ff;
+  --gradient: linear-gradient(45deg, var(--primary), #3f51b5);
 }
 
 html,
@@ -33,11 +34,19 @@ button {
 }
 
 .Typewriter__wrapper {
-  color: var(--primary);
+  /* color: var(--primary); */
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .Typewriter__cursor {
   display: none;
+}
+
+.subtitle {
+  background: var(--gradient);
 }
 
 img.next-image {
@@ -112,4 +121,24 @@ img.next-image {
   .cursor {
     display: none;
   }
+}
+
+.project-grid-item img {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s linear;
+}
+
+.project-grid-item:hover img {
+  transform: scale(1.6) rotate(20deg);
+  filter: grayscale(1) blur(3px);
+}
+
+.project-grid-title {
+  bottom: -70%;
+  transition: 0.3s linear;
+}
+
+.project-grid-item:hover .project-grid-title {
+  bottom: 0;
 }

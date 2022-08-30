@@ -7,6 +7,7 @@ import Hero from "../components/Hero";
 import img1 from "../assets/1.jpg";
 import img2 from "../assets/2.png";
 import img3 from "../assets/3.jpg";
+import Projects from "../components/Projects";
 
 export default function Home() {
   return (
@@ -59,6 +60,7 @@ export default function Home() {
         img={img1}
         reverse
       />
+      <Projects />
       <GetStarted />
       <Footer />
       <Drawer />
