@@ -45,7 +45,10 @@ const Drawer = () => {
               CONTACT
             </Link>
           </div>
-          <Button label="Get started" link="/" />
+          <Button
+            label="Get started"
+            link="https://forms.gle/heFhEnhmQkuULVXr8"
+          />
           <div className="flex items-center justify-center scale-125 mt-10">
             <Link href={socialLinks.twitter} passHref>
               <div className={styles.socialIconLink}>
