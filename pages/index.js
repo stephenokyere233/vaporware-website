@@ -19,32 +19,32 @@ export default function Home() {
       <div id="what-we-do" />
       <Flex
         title="Website &amp; Web App Development"
-        content="An interactive website is not only cool. It's SEO friendly and boosts your search engine rankings. Our team of developers with global experience bring diversity to every project and reimagine your ideas to be the best it can be. We cover all the basics as we transform thoughts on paper to an expert outcome; stunning with the extra advantage of competitiveness and user-friendliness."
+        content="We create SEO-friendly websites and web apps to increase traffic and exposure for your brand. So, we've got you covered whether you need a website for a school, a business, or an event. We are only a few clicks away."
         subtitle="WEB TOOLS"
         imgAlt="image of graphic design"
         img={img3}
       />
       <Flex
         title="Mobile App Development"
-        content="Our cross-disciplinary teams are highly collaborative, pushing the boundaries of what brands can enable for their users. Building is one of our favorite things to do. We get to explore and create a clever user experience across mobile platforms. How we get it done? Our engineers, strategists and quality assurance professionals turn ideas and designs into functional, reliable products. From strategy and development through to final implementation, we can help you build a powerful product for the market."
+        content="Our skilled development team develops cross-platform mobile apps for iOS and Android devices with customized features to fit your needs. All you need to do is come up with a concept, and we'll handle the rest!"
         subtitle="CUSTOM SOFTWARE"
         imgAlt="image of graphic design"
         img={img1}
         reverse
       />
       <Flex
-        title="UI &amp; UX Design"
-        content="Our interdisciplinary team consists of visual artists, writers, content curators and bloggers who offer their unique perspectives in technical and creative content documentation and production. Our approach is to tell a captivating story through photography, videography, 2D & 3D design and animation to bring the idea to life. We also offer content strategy and editorial services deployed across digital media, print media, VR and below the line marketing outlets.      "
-        subtitle="DESIGN"
-        imgAlt="image of UI and UX deesign"
-        img={uiDesign}
-      />
-      <Flex
         title="Graphic Design"
-        content="Our talented team of designers creates stunning, crisp, and high-quality flyers, business cards, promotional banners, and other graphic materials to help you build a professional brand identity."
+        content="We create stunning, crisp, and high-quality flyers, business cards, promotional banners, and other graphic materials to help you build an outstading and professional brand identity."
         subtitle="DESIGN &amp; CONTENT"
         imgAlt="image of graphic design"
         img={graphicDesign}
+      />
+      <Flex
+        title="UI &amp; UX Design"
+        content="At Vapourware Studios, we have highly skilled UI &amp; UX designers who collaborate to create modern, well-structured, and perfect user interfaces, resulting in immersive experiences."
+        subtitle="DESIGN"
+        imgAlt="image of UI and UX design"
+        img={uiDesign}
         reverse
       />
       {/* <Flex

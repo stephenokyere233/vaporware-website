@@ -1,10 +1,11 @@
-import img1 from "../assets/1.png"
-import img2 from "../assets/2.png"
-import img3 from "../assets/3.webp"
+import img1 from "../assets/1.png";
+import img2 from "../assets/2.png";
+import img3 from "../assets/3.webp";
 
 export const socialLinks = {
   twitter: "https://twitter.com/VapourwareHQ",
   instagram: "https://www.instagram.com/VapourwareHQ/",
+  email: "mailto:vapourwarestudios@gmail.com",
 };
 
 export const projects = [
