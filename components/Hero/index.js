@@ -27,7 +27,7 @@ const Hero = () => {
           To Life
         </h1>
         <Link href="#what-we-do">
-          <div className="scroll-icon">
+          <div className="scroll-icon mt-20 lg:mt-10">
             <Image src={scroll} alt="scroll icon" />
           </div>
         </Link>
