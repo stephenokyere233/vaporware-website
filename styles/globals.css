@@ -144,3 +144,7 @@ img.next-image {
 .project-grid-item:hover .project-grid-title {
   bottom: 0;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
