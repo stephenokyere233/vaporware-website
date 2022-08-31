@@ -1,12 +1,12 @@
+import Image from "next/image";
 import Link from "next/link";
+import logo from "../../assets/logo.png"
 
 const Logo = () => {
   return (
     <>
       <Link href="/" passHref>
-        <h2 className="text-xl font-bold cursor-pointer select-none hover:opacity-80">
-          vapourware
-        </h2>
+       <Image width={50} height={50} src={logo} alt="vapourware_logo" />
       </Link>
     </>
   );
