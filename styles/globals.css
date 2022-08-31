@@ -78,11 +78,11 @@ img.next-image {
   position: fixed;
   top: 50%;
   left: 50%;
-  border: 1px solid #ffffff44;
-  border-radius: 9999px;
-  padding: 10px;
+  /* border: 1px solid #ffffff44; */
+  /* border-radius: 9999px; */
+  /* padding: 10px;
   padding-top: 15px;
-  padding-left: 15px;
+  padding-left: 15px; */
   transform: translate(-50%, -50%);
   z-index: 999;
   pointer-events: none;
@@ -95,7 +95,7 @@ img.next-image {
   }
 
   50% {
-    transform: scale(1);
+    transform: scale(1.2);
   }
 
   100% {

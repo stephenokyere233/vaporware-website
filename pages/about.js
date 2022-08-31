@@ -12,7 +12,7 @@ const About = () => {
         <div className="page-banner-img">
           <div className="h-full w-full flex items-center">
             <div className="max-w-7xl pt-32 m-auto p-5">
-              <h1 className="lg:text-[7rem] text-6xl leading-[75px] font-bold lg:leading-[120px]">
+              <h1 className="lg:text-[5rem] text-6xl leading-[75px] font-bold lg:leading-[120px]">
                 A passion-driven team
               </h1>
             </div>
