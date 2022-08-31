@@ -64,6 +64,12 @@ img.next-image {
   content: " —";
 }
 
+.underline_::after {
+  content: "———";
+  font-weight: bold;
+  display: block;
+}
+
 .cursor {
   position: fixed;
   top: 50%;
@@ -147,4 +153,16 @@ img.next-image {
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+.page-banner-img {
+  width: 100vw;
+  height: 50vh;
+  background: #f1f1f111;
+  background: url("../assets/1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-top: -100px;
 }

@@ -7,7 +7,7 @@ import instagram from "../../assets/svg/instagram.svg";
 import email from "../../assets/svg/email.svg";
 import Button from "../Button";
 import styles from "./styles";
-import { socialLinks } from "../../content";
+import { proposalFormLink, socialLinks } from "../../content";
 
 const Drawer = () => {
   const { showDrawer, setShowDrawer } = useContext(AppContext);
@@ -48,7 +48,7 @@ const Drawer = () => {
           </div> */}
           <Button
             label="Let's work!"
-            link="https://forms.gle/heFhEnhmQkuULVXr8"
+            link={proposalFormLink}
           />
           <div className="flex items-center justify-center scale-125 mt-10">
             <Link href={socialLinks.twitter} passHref>

@@ -33,3 +33,5 @@ export const projects = [
     link: "",
   },
 ];
+
+export const proposalFormLink = "https://forms.gle/heFhEnhmQkuULVXr8";

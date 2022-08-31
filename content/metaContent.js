@@ -1,7 +1,7 @@
 const metaContent = {
   title: "Vapourware Studios —— Home",
   description:
-    "We are a talented team of developers and designers who create excellent websites, mobile apps, and designs to help you build your brand and attract clients.",
+    "We are a talented team of developers and designers specialized in creating elegant websites, mobile apps, and designs that promote your business, increase conversions and drive awareness.",
   image: "/assets/banner.png",
   imageAlt: "Vapourware studios banner image",
   siteName: "vapourwarestudios.co",
