@@ -1,16 +1,30 @@
 import MetaHead from "../components/Meta";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import img1 from "../assets/1.jpg";
 
 const About = () => {
   return (
     <>
       <MetaHead title="Vapourware Studios —— About" />
       <Header />
-      
+
       <div className="pointer" />
       <main>
-        <div className="page-banner-img" />
+        <div
+          className="page-banner-img"
+          style={{
+            backgroundImage: `url(${img1.src})`,
+            width: "100vw",
+            height: "50vh",
+            background: "#f1f1f111",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            backgroundAttachment: "fixed",
+            marginTop: "-100px",
+          }}
+        />
         <div className={styles.contentWrapper}>
           <div className="lg:flex-1 mb-10">
             <h1 className={styles.title}>About Us.</h1>
