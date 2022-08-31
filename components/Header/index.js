@@ -6,6 +6,7 @@ import menu from "../../assets/svg/menu.svg";
 import styles from "./styles";
 import Logo from "../Logo";
 import Drawer from "../Drawer";
+// import News from "../News";
 
 const Header = () => {
   const { setShowDrawer } = useContext(AppContext);
@@ -24,7 +25,7 @@ const Header = () => {
               <div className={styles.navLink}>
                 <Link href="/about">About</Link>
               </div>
-              <div className="m-5">|</div>
+              <div className="m-3">|</div>
               <div className={styles.navLink}>
                 <Link href="/contact">Contact</Link>
               </div>
@@ -35,6 +36,7 @@ const Header = () => {
           </div>
         </div>
       </header>
+      {/* <News label="We are celebrating our 24hrs anniversary. 30% discount on all services" /> */}
     </>
   );
 };

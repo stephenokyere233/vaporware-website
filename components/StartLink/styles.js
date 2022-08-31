@@ -1,5 +1,5 @@
 const styles = {
-  link: `border-b hover:text-[#1d95ff] flex items-center p-2`,
+  link: `border-b hover:border-b-secondary hover:text-secondary flex items-center p-2`,
 };
 
 export default styles;

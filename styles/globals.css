@@ -8,7 +8,7 @@
 :root {
   --primary: #1d95ff;
   --secondary: #ff19d8;
-  /* --gradient: linear-gradient(45deg, var(--primary), #3f51b5); */
+  --selection: #4e4e4e70;
   --gradient: linear-gradient(45deg, var(--primary), var(--secondary));
 }
 
@@ -20,6 +20,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   cursor: none;
+  font-weight: 600;
 }
 
 a,
@@ -58,7 +59,7 @@ img.next-image {
 }
 
 ::selection {
-  background: var(--primary);
+  background: var(--selection);
 }
 
 .afterline::after {
@@ -110,17 +111,17 @@ img.next-image {
 @keyframes scrollIcon {
   0% {
     transform: rotate(180deg) scale(2) translateY(-10px);
-    opacity: 0.3;
+    opacity: 1;
   }
 
   50% {
     transform: rotate(180deg) scale(2) translateY(0);
-    opacity: 1;
+    opacity: 0.3;
   }
 
   100% {
     transform: rotate(180deg) scale(2) translateY(-10px);
-    opacity: 0.3;
+    opacity: 1;
   }
 }
 
