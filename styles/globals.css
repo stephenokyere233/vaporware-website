@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -30,7 +31,7 @@ button {
 
 * {
   box-sizing: border-box;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   scroll-behavior: smooth;
 }
@@ -62,10 +63,12 @@ img.next-image {
 
 .afterline::after {
   content: " —";
+  font-family: "Montserrat", serif;
 }
 
 .underline_::after {
   content: "———";
+  font-family: "Montserrat", serif;
   font-weight: bold;
   display: block;
 }
@@ -157,9 +160,10 @@ img.next-image {
 
 .page-banner-img {
   width: 100vw;
-  height: 50vh;
+  height: 60vh;
   background: #f1f1f111;
-  background: url("/images/about-banner.jpg");
+  background: linear-gradient(45deg, #00000035, #00000035),
+    url("/images/about-banner.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

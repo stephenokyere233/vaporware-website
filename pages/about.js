@@ -10,20 +10,13 @@ const About = () => {
 
       <div className="pointer" />
       <main>
-        <div
-          className="page-banner-img"
-        //   style={{
-        //     backgroundImage: `url("/assets/banner.jpg")`,
-        //     width: "100vw",
-        //     height: "50vh",
-        //     background: "#f1f1f111",
-        //     backgroundPosition: "center",
-        //     backgroundSize: "cover",
-        //     backgroundRepeat: "no-repeat",
-        //     backgroundAttachment: "fixed",
-        //     marginTop: "-100px",
-        //   }}
-        />
+        <div className="page-banner-img">
+          <div className="h-full w-full flex items-center">
+            <div className="max-w-7xl pt-10 m-auto p-5">
+              <h1 className="lg:text-[7rem] text-6xl leading-[75px] font-bold lg:leading-[120px] ">A passion-driven team</h1>
+            </div>
+          </div>
+        </div>
         <div className={styles.contentWrapper}>
           <div className="lg:flex-1 mb-10">
             <h1 className={styles.title}>About Us.</h1>
@@ -50,7 +43,7 @@ const About = () => {
 
 const styles = {
   p: `text-xl leading-8`,
-  title: `underline_ lg:text-6xl text-5xl font-bold`,
+  title: `underline_ lg:text-4xl font-bold`,
   contentWrapper: `max-w-7xl m-auto p-5 py-20 lg:px-0 font-medium lg:flex justify-evenly`,
 };
 

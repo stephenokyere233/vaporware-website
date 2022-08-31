@@ -102,7 +102,7 @@ const Contact = () => {
       <MetaHead title="Vapourware Studios —— Contact" />
       <Header />
       <div className="pointer" />
-      <main className="p-5 lg:p-0 sm:-mt-[100px] h-[80vh] flex flex-col items-center justify-center">
+      <main className="p-5 lg:p-0 sm:-mt-[100px] h-screen flex flex-col items-center justify-center">
         <div className="flex flex-col sm:flex-row">
           <div className="flex-1 mb-10 sm:m-0">
             <h2 className={styles.title}>Contact Us.</h2>
@@ -129,7 +129,7 @@ const Contact = () => {
 
 const styles = {
   p: `text-xl leading-8 font-medium`,
-  title: `underline_ lg:text-6xl text-5xl font-bold`,
+  title: `underline_ lg:text-4xl font-bold`,
   contentWrapper: `max-w-7xl m-auto p-10 py-20 lg:px-0 font-medium lg:flex justify-evenly`,
 };
 
