@@ -5,7 +5,7 @@ import GetStarted from "../components/GetStarted";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import img3 from "../assets/3.webp";
-import img1 from "../assets/1.jpg";
+import mobileAppDev from "../assets/mobile-app-dev.jpg";
 import uiDesign from "../assets/uiDesign.jpg";
 import graphicDesign from "../assets/graphicDesign.webp";
 import MetaHead from "../components/Meta";
@@ -29,7 +29,7 @@ export default function Home() {
         content="Our skilled development team develops cross-platform mobile apps for iOS and Android devices with customized features to fit your needs. All you need to do is come up with a concept, and we'll handle the rest!"
         subtitle="CUSTOM SOFTWARE"
         imgAlt="image of graphic design"
-        img={img1}
+        img={mobileAppDev}
         reverse
       />
       <Flex
