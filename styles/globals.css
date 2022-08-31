@@ -159,10 +159,10 @@ img.next-image {
   width: 100vw;
   height: 50vh;
   background: #f1f1f111;
+  background: url("/images/about-banner.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin-top: -100px;
-  background: url("/images/about-banner.jpg");
 }
