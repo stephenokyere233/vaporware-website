@@ -101,12 +101,11 @@ const Contact = () => {
     <>
       <MetaHead title="Vapourware Studios —— Contact" />
       <Header />
-      <Drawer />
       <div className="pointer" />
       <main className="p-5 lg:p-0 sm:-mt-[100px] h-[80vh] flex flex-col items-center justify-center">
         <div className="flex flex-col sm:flex-row">
           <div className="flex-1 mb-10 sm:m-0">
-            <h2 className="font-bold text-3xl underline_">Contact Us.</h2>
+            <h2 className={styles.title}>Contact Us.</h2>
             <div className="-ml-5">
               <SocialIcons />
             </div>
@@ -118,37 +117,11 @@ const Contact = () => {
             </p>
             <br />
             <Button label="Send us a proposal" link={proposalFormLink} />
-            <p className="opacity-40 mt-20">
+            <small className="block opacity-40 mt-10">
               &copy;{Date().substr(11, 4)} Vapourware Studios
-            </p>
+            </small>
           </div>
         </div>
-
-        {/* <div className="my-10">
-          
-        </div>
-       */}
-
-        {/* <div className="page-banner-img" />
-        <div className={styles.contentWrapper}>
-          <div className="lg:flex-1 mb-10">
-            <h1 className={styles.title}>Who Are We?</h1>
-          </div>
-          <div className="lg:flex-1">
-            <p className={styles.p}>
-              We are a talented team of developers and designers specialized in
-              creating elegant websites, mobile apps, and designs that promote
-              your business, increase conversions and drive awareness.
-            </p>
-            <br />
-            <p className={styles.p}>
-              We build meaningful products and believe that great digital
-              experiences come from a combination of technical skill and empathy
-              for the people who will use them.
-            </p>
-          </div>
-        </div> */}
-        {/* <Footer /> */}
       </main>
     </>
   );

@@ -1,13 +1,13 @@
-import Image from "next/image";
-import Link from "next/link";
 import { useContext } from "react";
 import { AppContext } from "../../context";
+import { proposalFormLink, socialLinks } from "../../content";
+import Image from "next/image";
+import Link from "next/link";
 import twitter from "../../assets/svg/twitter.svg";
 import instagram from "../../assets/svg/instagram.svg";
 import email from "../../assets/svg/email.svg";
 import Button from "../Button";
 import styles from "./styles";
-import { proposalFormLink, socialLinks } from "../../content";
 
 const Drawer = () => {
   const { showDrawer, setShowDrawer } = useContext(AppContext);
@@ -21,35 +21,25 @@ const Drawer = () => {
           <span className={styles.close} onClick={() => setShowDrawer(false)}>
             &times;
           </span>
-          {/* <div className={styles.link}>
-            <Link passHref href="/">
-              HOME
-            </Link>
+
+          <div>
+            <div className={styles.link}>
+              <Link passHref href="/">
+                Home
+              </Link>
+            </div>
+            <div className={styles.link}>
+              <Link passHref href="/about">
+                About
+              </Link>
+            </div>
+            <div className={styles.link}>
+              <Link passHref href="/contact">
+                Contact
+              </Link>
+            </div>
           </div>
-          <div className={styles.link}>
-            <Link passHref href="/">
-              ABOUT
-            </Link>
-          </div>
-          <div className={styles.link}>
-            <Link passHref href="/">
-              PROJECTS
-            </Link>
-          </div>
-          <div className={styles.link}>
-            <Link passHref href="/">
-              CAREERS
-            </Link>
-          </div>
-          <div className={styles.link}>
-            <Link passHref href="/">
-              CONTACT
-            </Link>
-          </div> */}
-          <Button
-            label="Let's work!"
-            link={proposalFormLink}
-          />
+          <Button label="Let's work!" link={proposalFormLink} />
           <div className="flex items-center justify-center scale-125 mt-10">
             <Link href={socialLinks.twitter} passHref>
               <a target="_blank" className="p-4" rel="noopener noreferrer">

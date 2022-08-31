@@ -1,6 +1,5 @@
 import MetaHead from "../components/Meta";
 import Header from "../components/Header";
-import Drawer from "../components/Drawer";
 import Footer from "../components/Footer";
 
 const About = () => {
@@ -8,7 +7,7 @@ const About = () => {
     <>
       <MetaHead title="Vapourware Studios —— About" />
       <Header />
-      <Drawer />
+      
       <div className="pointer" />
       <main>
         <div className="page-banner-img" />
@@ -39,7 +38,7 @@ const About = () => {
 const styles = {
   p: `text-xl leading-8`,
   title: `underline_ lg:text-6xl text-5xl font-bold`,
-  contentWrapper: `max-w-7xl m-auto p-10 py-20 lg:px-0 font-medium lg:flex justify-evenly`,
+  contentWrapper: `max-w-7xl m-auto p-5 py-20 lg:px-0 font-medium lg:flex justify-evenly`,
 };
 
 export default About;

@@ -1,12 +1,15 @@
+import { useRouter } from "next/router";
 import { createContext, useEffect, useState } from "react";
 
 export const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
+  const router = useRouter();
   const [_document, set_document] = useState(null);
   const [showDrawer, setShowDrawer] = useState(false);
 
   useEffect(() => {
+    setShowDrawer(false);
     if (typeof window === "object") {
       set_document(document);
 
@@ -28,7 +31,7 @@ export const AppProvider = ({ children }) => {
       window.addEventListener("mousemove", onPointerMove);
       window.addEventListener("mousedown", onMouseClick);
     }
-  }, [_document]);
+  }, [_document, router]);
 
   return (
     <AppContext.Provider value={{ showDrawer, setShowDrawer }}>
