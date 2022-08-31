@@ -14,7 +14,7 @@ const Footer = () => {
           <p className="opacity-40">
             &copy;{Date().substr(11, 4)} Vapourware Studios
           </p>
-          <div className="flex items-center -ml-3 lg:m-0">
+          <div className="flex items-center -ml-3 lg:m-0 scale-90">
             <Link href={socialLinks.twitter} passHref>
               <a target="_blank" className="p-4" rel="noopener noreferrer">
                 <div className={styles.socialIconLink}>
