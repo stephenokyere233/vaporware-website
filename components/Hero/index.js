@@ -18,7 +18,7 @@ const Hero = () => {
           <div className="lg:h-[140px] h-[100px] -mb-5 lg:mb-0 lg:mt-3">
             <Typewriter
               options={{
-                strings: ["Ideas", "Dreams", "Vision"],
+                strings: ["Ideas", "Designs", "Dreams", "Vision"],
                 autoStart: true,
                 loop: true,
               }}
