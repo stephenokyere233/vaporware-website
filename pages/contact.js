@@ -44,7 +44,7 @@ const Contact = () => {
       <MetaHead title="Vapourware Studios —— Contact" />
       <Header />
       <div className="pointer" />
-      <main className="p-5 lg:p-0 sm:-mt-[100px] h-screen flex flex-col items-center justify-center">
+      <main className="p-5 lg:p-0 -mt-[100px] h-screen flex flex-col items-center justify-center">
         <div className="flex flex-col sm:flex-row">
           <div className="flex-1 mb-10 sm:m-0">
             <h2 className={styles.title}>Contact Us.</h2>
