@@ -6,7 +6,7 @@ const Logo = () => {
   return (
     <>
       <Link href="/" passHref>
-        <div className="w-[80px]">
+        <div className="w-[60px]">
           <Image src={logo} alt="vapourware_logo" />
         </div>
       </Link>
