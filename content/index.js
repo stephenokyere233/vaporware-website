@@ -1,8 +1,8 @@
 import img1 from "../assets/1.png";
 
 export const socialLinks = {
-  twitter: "https://twitter.com/VapourwareHQ",
-  instagram: "https://www.instagram.com/VapourwareHQ/",
+  twitter: "https://twitter.com/VapourwareCo",
+  instagram: "https://www.instagram.com/VapourwareCo/",
   email: "mailto:vapourwarestudios@gmail.com",
 };
 
