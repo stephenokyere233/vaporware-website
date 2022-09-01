@@ -8,6 +8,7 @@ import img3 from "../assets/3.webp";
 import mobileAppDev from "../assets/mobile-app-dev.jpg";
 import uiDesign from "../assets/uiDesign.jpg";
 import graphicDesign from "../assets/graphicDesign.webp";
+import enterpriseApps from "../assets/enterpriseApps.webp";
 import MetaHead from "../components/Meta";
 
 export default function Home() {
@@ -19,18 +20,25 @@ export default function Home() {
       <div id="what-we-do" />
       <Flex
         title="Website &amp; Web App Development"
-        content="We create SEO-friendly websites and web apps to increase traffic and exposure for your brand. So, we've got you covered whether you need a website for a school, a business, or an event. We are only a few clicks away."
+        content="We create SEO-friendly websites and web apps to increase traffic and exposure for your business or institution. We've got you covered for all your website needs. We are only a few clicks away."
         subtitle="WEB TOOLS"
         imgAlt="image of graphic design"
         img={img3}
       />
       <Flex
+        title="Enterprise Applications"
+        content="We develop enterprise applications with custom features that are tailored to meet specific business needs. Our team of application developers works with you from start to finish, carefully planning each step in order to deliver the highest quality software solutions."
+        subtitle="CUSTOM SOFTWARE"
+        imgAlt="image of enterprise applications"
+        img={enterpriseApps}
+        reverse
+      />
+      <Flex
         title="Mobile App Development"
         content="Our skilled development team develops cross-platform mobile apps for iOS and Android devices with customized features to fit your needs. All you need to do is come up with a concept, and we'll handle the rest!"
-        subtitle="CUSTOM SOFTWARE"
+        subtitle="MOBILE"
         imgAlt="image of graphic design"
         img={mobileAppDev}
-        reverse
       />
       <Flex
         title="Graphic Design"
@@ -38,6 +46,7 @@ export default function Home() {
         subtitle="DESIGN &amp; CONTENT"
         imgAlt="image of graphic design"
         img={graphicDesign}
+        reverse
       />
       <Flex
         title="UI &amp; UX Design"
@@ -45,7 +54,6 @@ export default function Home() {
         subtitle="DESIGN"
         imgAlt="image of UI and UX design"
         img={uiDesign}
-        reverse
       />
       <GetStarted />
       <Footer />
