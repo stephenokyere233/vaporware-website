@@ -4,9 +4,9 @@ import Footer from "../components/Footer";
 import GetStarted from "../components/GetStarted";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
-import img3 from "../assets/3.webp";
-import mobileAppDev from "../assets/mobile-app-dev.jpg";
-import uiDesign from "../assets/uiDesign.jpg";
+import websites from "../assets/websites.webp";
+import mobileAppDev from "../assets/mobileAppDev.jpg";
+import uiDesign from "../assets/uiDesign2.webp";
 import graphicDesign from "../assets/graphicDesign.webp";
 import enterpriseApps from "../assets/enterpriseApps.webp";
 import MetaHead from "../components/Meta";
@@ -23,7 +23,7 @@ export default function Home() {
         content="We create SEO-friendly websites and web apps to increase traffic and exposure for your business or institution. We've got you covered for all your website needs. We are only a few clicks away."
         subtitle="WEB TOOLS"
         imgAlt="image of graphic design"
-        img={img3}
+        img={websites}
       />
       <Flex
         title="Enterprise Applications"
