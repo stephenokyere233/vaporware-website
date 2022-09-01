@@ -12,7 +12,7 @@ const Hero = () => {
       <section className={styles.container}>
         <h1
           ref={ref}
-          className="lg:text-9xl text-7xl max-w-5xl font-bold mb-8 text-center h-3/6"
+          className="lg:text-8xl text-7xl max-w-5xl font-bold mb-8 text-center h-3/6"
         >
           We Bring Your
           <div className="lg:h-[140px] h-[100px] -mb-5 lg:mb-0 lg:mt-3">
