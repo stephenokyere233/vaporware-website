@@ -31,6 +31,9 @@ button {
   text-decoration: none;
   cursor: none;
 }
+div .scroll-icon{
+  cursor:none;
+}
 
 * {
   box-sizing: border-box;
