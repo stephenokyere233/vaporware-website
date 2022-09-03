@@ -14,11 +14,7 @@ const Projects = () => {
             </p> */}
           </li>
           <li>
-            <div id="grid_1" className="grid-item"></div>
-            <div className={styles.gridText}>sample #1</div>
-          </li>
-          <li>
-            <div id="grid_2" className="grid-item"></div>
+            <div id="grid_4" className="grid-item"></div>
             <div className={styles.gridText}>sample #1</div>
           </li>
           <li>
@@ -26,11 +22,15 @@ const Projects = () => {
             <div className={styles.gridText}>sample #1</div>
           </li>
           <li>
-            <div id="grid_4" className="grid-item"></div>
+            <div id="grid_1" className="grid-item"></div>
             <div className={styles.gridText}>sample #1</div>
           </li>
           <li>
             <div id="grid_5" className="grid-item"></div>
+            <div className={styles.gridText}>sample #1</div>
+          </li>
+          <li>
+            <div id="grid_2" className="grid-item"></div>
             <div className={styles.gridText}>sample #1</div>
           </li>
         </ul>
