@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import GetStarted from "../components/GetStarted";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
+import Projects from "../components/Projects"
 import websites from "../assets/websites.webp";
 import mobileAppDev from "../assets/mobileAppDev.jpg";
 import uiDesign from "../assets/uiDesign2.webp";
@@ -55,6 +56,7 @@ export default function Home() {
         imgAlt="image of UI and UX design"
         img={uiDesign}
       />
+      <Projects />
       <GetStarted />
       <Footer />
       <Drawer />

@@ -21,7 +21,6 @@ body {
   overflow-x: hidden;
   cursor: none;
   font-weight: 600;
- 
 }
 
 a,
@@ -137,26 +136,6 @@ img.next-image {
   }
 }
 
-.project-grid-item img {
-  width: 100%;
-  height: 100%;
-  transition: 0.3s linear;
-}
-
-.project-grid-item:hover img {
-  transform: scale(1.6) rotate(20deg);
-  filter: grayscale(1) blur(3px);
-}
-
-.project-grid-title {
-  bottom: -70%;
-  transition: 0.3s linear;
-}
-
-.project-grid-item:hover .project-grid-title {
-  bottom: 0;
-}
-
 ::-webkit-scrollbar {
   display: none;
 }
@@ -172,4 +151,82 @@ img.next-image {
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin-top: -100px;
+}
+
+.grid-wrapper {
+  column-count: 3;
+  column-gap: 0;
+}
+
+.grid-wrapper li {
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s linear;
+}
+
+.grid-wrapper li:hover {
+  filter: grayscale(1);
+}
+
+.grid-wrapper li .grid-text {
+  transition: 0.3s linear;
+}
+
+.grid-wrapper li:hover > .grid-text {
+  top: 80%;
+}
+
+.grid-item {
+  background-color: #f1f1f111;
+  transition: 0.3s linear;
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-wrapper #grid_1 {
+  background: url("/images/graphics/1.jpeg");
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.grid-wrapper #grid_2 {
+  background: url("/images/graphics/2.jpeg");
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.grid-wrapper #grid_3 {
+  background: url("/images/graphics/3.jpeg");
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.grid-wrapper #grid_4 {
+  background: url("/images/graphics/4.jpeg");
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.grid-wrapper #grid_5 {
+  background: url("/images/graphics/5.jpeg");
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.grid-wrapper #grid_6 {
+  background: url("/images/graphics/6.jpeg");
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
