@@ -15,10 +15,10 @@ const Flex = (props) => {
             <div className="flex-1" ref={ref}>
               <div className="lg:p-20 p-6 py-20">
                 <small className={styles.subtitle}>{subtitle}</small>
-                <p className="text-3xl xl:text-6xl font-bold afterline">
+                <p className="text-4xl xl:text-6xl font-bold afterline">
                   {title}
                 </p>
-                <p className="mt-5 text-xl font-medium leading-8">{content}</p>
+                <p className="mt-5 text-xl font-medium leading-8 opacity-80">{content}</p>
                 <StartLink />
               </div>
             </div>
@@ -53,7 +53,7 @@ const Flex = (props) => {
               <p className="text-3xl xl:text-6xl font-bold afterline">
                 {title}
               </p>
-              <p className="mt-5 text-xl font-medium leading-8">{content}</p>
+              <p className="mt-5 text-xl font-medium leading-8 opacity-80">{content}</p>
               <StartLink />
             </div>
           </div>
@@ -61,28 +61,6 @@ const Flex = (props) => {
       </section>
     </>
   );
-
-  // return (
-  //   <>
-  //     <section>
-  //       <div className="flex lg:flex-row flex-col-reverse items-center justify-between">
-  // <div className="flex-1">
-  //   <Image src={img} alt={imgAlt} objectFit="cover" layout="responsive" />
-  // </div>
-  //         <div className="flex-1">
-  //           <div className="lg:p-20 p-6 py-20" ref={ref}>
-  //             <small className={styles.subtitle}>{subtitle}</small>
-  //             <p className="lg:text-7xl text-4xl font-bold afterline">
-  //               {title}
-  //             </p>
-  //             <p className="mt-5 text-xl font-medium leading-8">{content}</p>
-  //             <StartLink />
-  //           </div>
-  //         </div>
-  //       </div>
-  //     </section>
-  //   </>
-  // );
 };
 
 export default Flex;
