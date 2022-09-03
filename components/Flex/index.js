@@ -15,7 +15,7 @@ const Flex = (props) => {
             <div className="flex-1" ref={ref}>
               <div className="lg:p-20 p-6 py-20">
                 <small className={styles.subtitle}>{subtitle}</small>
-                <p className="lg:text-7xl text-4xl font-bold afterline">
+                <p className="text-3xl xl:text-6xl font-bold afterline">
                   {title}
                 </p>
                 <p className="mt-5 text-xl font-medium leading-8">{content}</p>
@@ -50,7 +50,7 @@ const Flex = (props) => {
           <div className="flex-1" ref={ref}>
             <div className="lg:p-20 p-6 py-20">
               <small className={styles.subtitle}>{subtitle}</small>
-              <p className="lg:text-7xl text-4xl font-bold afterline">
+              <p className="text-3xl xl:text-6xl font-bold afterline">
                 {title}
               </p>
               <p className="mt-5 text-xl font-medium leading-8">{content}</p>

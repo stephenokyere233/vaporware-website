@@ -154,7 +154,6 @@ img.next-image {
 }
 
 .grid-wrapper {
-  column-count: 3;
   column-gap: 0;
 }
 
