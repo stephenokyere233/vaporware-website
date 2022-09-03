@@ -16,7 +16,6 @@ const Header = () => {
       <header className={styles.header}>
         <div className={styles.headerWrapper}>
           <Logo />
-
           <div className="lg:flex items-center justify-center hidden">
             <nav className={styles.nav}>
               <div className={styles.navLink}>
