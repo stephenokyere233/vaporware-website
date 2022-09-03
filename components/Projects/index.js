@@ -33,9 +33,9 @@ const Projects = () => {
             >
               <a target="_blank" rel="noopener noreferrer">
                 <div id="grid_5" className="grid-item"></div>
-                <div className={styles.gridText}>Saucy Grills</div>
               </a>
             </Link>
+            <div className={styles.gridText}>Saucy Grills</div>
           </li>
           <li>
             <div id="grid_2" className="grid-item"></div>
