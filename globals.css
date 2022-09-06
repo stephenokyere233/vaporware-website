@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #1d95ff;
+  --secondary: #ff19d8;
+  --selection: #4e4e4e70;
+  --gradient: linear-gradient(45deg, var(--primary), var(--secondary));
+}
+
+html,
+body {
+  background: #000;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  cursor: none;
+  font-weight: 600;
+}
+div .scroll-icon{
+  cursor:none;
+}
+
+a,
+button {
+  color: inherit;
+  user-select: none;
+  text-decoration: none;
+  cursor: none;
+}
+.hide{
+  display: none;
+  cursor: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.Typewriter__wrapper {
+  /* color: var(--primary); */
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Typewriter__cursor {
+  display: none;
+}
+
+.subtitle {
+  background: var(--gradient);
+}
+
+img.next-image {
+  margin: 0;
+  width: 100%;
+}
+
+::selection {
+  background: var(--selection);
+}
+
+.afterline::after {
+  content: " —";
+  font-family: "Montserrat", serif;
+}
+
+.underline_::after {
+  content: "———";
+  font-family: "Montserrat", serif;
+  font-weight: bold;
+  display: block;
+}
+
+.cursor {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* border: 1px solid #ffffff44; */
+  /* border-radius: 9999px; */
+  /* padding: 10px;
+  padding-top: 15px;
+  padding-left: 15px; */
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  pointer-events: none;
+  animation: pointer 1s infinite;
+}
+
+@keyframes pointer {
+  0% {
+    transform: scale(0.8);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+.scroll-icon {
+  animation: scrollIcon 1s infinite;
+  cursor: pointer;
+}
+
+@keyframes scrollIcon {
+  0% {
+    transform: rotate(180deg) scale(2) translateY(-10px);
+    opacity: 1;
+  }
+
+  50% {
+    transform: rotate(180deg) scale(2) translateY(0);
+    opacity: 0.3;
+  }
+
+  100% {
+    transform: rotate(180deg) scale(2) translateY(-10px);
+    opacity: 1;
+  }
+}
+
+.button:hover .buttonArrowIcon {
+  fill: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .cursor {
+    display: none;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.page-banner-img {
+  width: 100vw;
+  height: 60vh;
+  background: #f1f1f111;
+  background: linear-gradient(45deg, #00000035, #00000035),
+    url("/images/about-banner.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-top: -100px;
+}
+
+.grid-wrapper {
+  column-gap: 0;
+}
+
+.grid-wrapper li {
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s linear;
+}
+
+.grid-wrapper li:hover {
+  filter: grayscale(1);
+}
+
+.grid-wrapper li .grid-text {
+  transition: 0.3s linear;
+}
+
+.grid-wrapper li:hover > .grid-text {
+  top: 80%;
+}
+
+.grid-item {
+  background-color: #f1f1f111;
+  transition: 0.3s linear;
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-wrapper #grid_1 {
+  background: url("/images/graphics/1.jpeg");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.grid-wrapper #grid_2 {
+  background: url("/images/graphics/2.jpeg");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.grid-wrapper #grid_3 {
+  background: url("/images/graphics/3.jpeg");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.grid-wrapper #grid_4 {
+  background: url("/images/graphics/4.jpeg");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.grid-wrapper #grid_5 {
+  background: url("/images/websites/1.png");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* .grid-wrapper #grid_6 {
+  background: url("/images/graphics/5.jpeg");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} */
