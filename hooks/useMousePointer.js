@@ -7,7 +7,7 @@ const useMousePosition = () => {
       let mouse = document.querySelector(".cursor");
       const { clientX, clientY } = event;
       setMousePosition({ x: clientX, y: clientY });
-      let height = '100vh';
+      let height =window.innerHeight;
       let width = window.innerWidth;
       if (
         (clientX <= 0 ||
